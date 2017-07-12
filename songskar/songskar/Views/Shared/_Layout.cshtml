@@ -3,37 +3,247 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - সংস্কার  </title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+   
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+
+
+
+
+
+
+<body class="no-padding">
+                                @* Jumbo *@
+    <div class="jumbotron">
+            <h1>সংস্কার</h1>
+            <p class="lead"> হযরত আবু হুরাইরা রা. বলেন, রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়া সাল্লাম ইরশাদ করেছেন, যখন কোন বান্দা অন্তরের ইখলাসের সহিত লা ইলাহা ইল্লাল্লাহ বলে, তখন এই কালেমার জন্য নিশ্চিতরূপে আসমানের দরজাসমূহ খুলে দেওয়া হয়। এমনকি এই কালেমা সোজা আরশ পর্র্র্র্র্র্র্যন্ত পৌঁছে যায়। অর্থাৎ সাথে সাথেই কবুল হয়ে যায়। তবে শর্ত হল, যদি এই কালেমা পাঠকারী কবীরা গুনাহ…</p>
+
+
+
+            <p><a href="http://songskar.net/2017/05/11/%E0%A6%86%E0%A6%B2-%E0%A6%B9%E0%A6%BE%E0%A6%A6%E0%A7%80%E0%A6%B8-3/" class="btn btn-success btn-large">বিস্তারিত পড়ুন  &raquo;</a></p>
+        </div>
+                                                         @* jumbo *@
+
+
+ 
+    @*  Banner  *@
+
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="background-color: #404040; color: #fff; ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                @*<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-WDM-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>*@
+                @*<a class="navbar-brand no-padding no-margin" href="#"> <img src="image\Singnature.jpg" style="width:150px; height: 50px;"></a>*@
+            </div>
+            @*<div class="collapse navbar-collapse navbar-right" id="bs-WDM-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li> <a href="index.html">Home</a></li>
+                        <li> <a href="blog.html">Blog</a></li>
+                        <li> <a href="index.html">About</a></li>
+                        <li> <a href="index.html">Contact</a></li>
+
+
+                    </ul>
+                </div>*@
+
+
+
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("সংস্কার", "Index", "Home", null, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        @*<li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
+
+                        <li>@Html.ActionLink("কুরআন", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("হাদীস  ", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("সম্পাদকীয় ", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("আর্টিকেল", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("স্বাস্থ্য ", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("কবিতা ", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("সংবাদ", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("অংকুর", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("এই মাসে  ", "Contact", "Home")</li>
+
+
+
+                        <li class="dropdown">
+                        <li>@Html.ActionLink("অন্যান্য  ", "Contact", "Home")</li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">অন্যান্য <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("যোগাযোগ  ", "Contact", "Home")</li>
+                                <li>@Html.ActionLink("প্রচ্ছদ ", "Contact", "Home")</li>
+                                <li>@Html.ActionLink("খেলাদুলা ", "Contact", "Home")</li>
+                            </ul>>
+
+
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+    </nav>
+
+
+    @* Banner ends  *@
+
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #404040; color: #fff;">
+        @*<div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+                @Html.ActionLink("সংস্কার", "Index", "Home", null, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                   
+
+                    <li>@Html.ActionLink("কুরআন", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("হাদীস  ", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("সম্পাদকীয় ", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("আর্টিকেল", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("স্বাস্থ্য ", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("কবিতা ", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("সংবাদ", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("অংকুর", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("এই মাসে  ", "Contact", "Home")</li>
+                    
+                   
+
+                    <li class="dropdown">
+                    <li>@Html.ActionLink("অন্যান্য  ", "Contact", "Home")</li>
+                    <li>
+                        <a href="#" class="dropdown-toggle"data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">অন্যান্য <span class="caret"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("যোগাযোগ  ", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("প্রচ্ছদ ", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("খেলাদুলা ", "Contact", "Home")</li>
+                        </ul>>
+
+
+                    </li>
+
+
+
                 </ul>
             </div>
-        </div>
+        </div>*@
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+
+
+    
+    @RenderBody()
+
+    <div class="no-margin no-padding">
+     @*   <div class="container no-margin no-padding" >*@
+            @*<hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - সংস্কার </p>
+                </footer>*@
+         
+
+
+            <footer class="site-footer ">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>সার্বিক যোগাযোগ</h4>
+                            <address>
+                                বাড়ি-২১, রোড-৩, সেক্টর-৬, <br> 
+                                উত্তরা মডেল টাউন, উত্তরা,  <br>
+                                ঢাকা-১২৩০ <br>
+                                ফোনঃ ৮৯৫৩২৯৩, ফ্যাক্সঃ ০০৮৮-০২৮৯৫২১১৩ <br>
+                                ই-মেইলঃ songskar@gmail.com, songskar@hotmail.com <br>
+                                ওয়েব সাইটঃ  www.songskar.net<br>
+                                ডাক যোগাযোগঃ জিপিও বক্স নং-১০৭, ঢাকা-১০০০, বাংলাদেশ <br>
+                            </address>
+                        </div>
+
+                        <div class="col-md-2">
+                            <ul class="footer-nav">
+                                <li><a href="index.html">কুরআন</a><br></li>
+                                <li><a href="blog.html">হাদীস</a><br></li>
+                                <li><a href="contact.html">সম্পাদকীয়</a><br></li>
+                                <li><a href="link.html">আর্টিকেল</a><br></li>
+                                <li><a href="index.html">স্বাস্থ্য</a><br></li>
+                             </ul>
+                          </div>
+
+
+                                <div class="col-md-2 ">
+                                    <ul class="footer-nav">
+
+                                        <li><a href="blog.html">কবিতা</a><br></li>
+                                        <li><a href="contact.html">সংবাদ</a><br></li>
+                                        <li><a href="link.html">অংকুর</a><br></li>
+                                        <li><a href="link.html">এই মাসে</a><br></li>
+                                        <li><a href="link.html">খেলাদুলা</a><br></li>
+                                 
+                                    </ul>
+                                </div>
+</div>
+                    <div class="bottom-footer">
+                        <div class="col-md-5">
+                             &copy; @DateTime.Now.Year - সংস্কার
+                            <p>সম্পাদক ও প্রকাশক: ড. মুহাম্মদ ইসমাইল হোসেন</p>
+                        
+                        
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <p>Developed by Missing Bangla</p>
+                        </div>
+                        
+                        <div class="col-md-4 ">
+                            
+                                <ul class="footer-nav">
+                                    <li><a href="index.html">Facebook</a></li>
+                                    <li><a href="blog.html">Twitter</a></li>
+                                    <li><a href="contact.html">Google+</a></li>
+                                    
+
+                                </ul>
+
+                            </div>
+                            
+
+                        </div>
+                        
+                    </div>
+                </div>
+    </footer>
+
+
+        
+
+    @*</div>*@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
